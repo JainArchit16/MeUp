@@ -15,7 +15,10 @@ function App() {
   const [AddData,setData] =useState(Data);
   return (
     <div >
+    <div className="bg-slate-800">
+
       <Navbar isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />
+    </div>
       {/* <Home></Home> */}
       <Routes>
         <Route path="/" element={<Home />} />

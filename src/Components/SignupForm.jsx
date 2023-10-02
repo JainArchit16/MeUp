@@ -51,31 +51,9 @@ const SignupForm = (props) => {
 
   return (
     <div>
-      <div className="flex bg-richblack-800 p-1 gap-x-1 rounded-full max-w-max">
-        <button
-          onclick={() => setAccountType("student")}
-          className={`${
-            accountType === "student"
-              ? "bg-richblack-900 text-richblack-5"
-              : "bg-transparent text-richblack-200 "
-          } py-2 px-5 rounded-full transition-all`}
-        >
-          Student
-        </button>
-        <button
-          onclick={() => setAccountType("instructor")}
-          className={`${
-            accountType === "instructor"
-              ? "bg-richblack-900 text-richblack-5"
-              : "bg-transparent text-richblack-200 "
-          } py-2 px-5 rounded-full transition-all`}
-        >
-          Instructor
-        </button>
-      </div>
 
       <form onSubmit={submitHandler}>
-        <div className="flex gap-x-4">
+        <div className="flex gap-x-4 mt-4">
           <label htmlFor="" className="w-full">
             <p className="text-[0.875rem] text-richblack-5 mb-1 leading-[1.375rem]">
               First Name <sup className="text-pink-200">*</sup>

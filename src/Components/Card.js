@@ -22,7 +22,7 @@ const Card = (props) => {
                 <div className='flex flex-row justify-around m-4'>
 
                     <button className='font-bold hover:bg-red-500 hover:text-white inline-block  border-2 transition-all p-1'>Get Ticket</button>
-                        <p className='font-bold text-red-500 text-2xl'>{data.price}</p>
+                        <p className='font-bold text-red-500 text-2xl'>${data.price}</p>
                 </div>
 
 

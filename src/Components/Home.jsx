@@ -47,8 +47,8 @@ const Home = () => {
                 <option  value="Tomorrow">Tomorrow</option>
                 <option  value="This Week">This week</option>
 			      </select>
+          <button className='cursor-pointer p-3 font-bold text-white bg-red-500 w-[15%] relative -left-12'>Search</button>
           </form>
-          <button className='cursor-pointer p-4 font-bold text-white bg-red-500 w-[15%] -left-64 relative'>Search</button>
 
           
         </div>

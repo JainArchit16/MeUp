@@ -1,7 +1,7 @@
 import React from 'react'
 const Howit = () => {
   return (
-    <div className='flex flex-col w-11/12 m-auto'>
+    <div className='flex flex-col w-11/12 m-auto my-6'>
       <p className='text-3xl font-bold px-3 py-1'>How It Work</p>
       <p className='text-xl opacity-70 px-3 py-1'>You can choose to display featured</p>
       <div className='bg-red-500 w-[5%] h-0.5 text-white text-1 mx-3 mt-1'> " s"</div>

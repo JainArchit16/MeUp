@@ -72,7 +72,7 @@ const Navbar = (props) => {
           </Link>
         )}
 
-        <Link to="/login">
+        <Link to="/Insert">
             <button className="py-[8px] px-[12px] flex flex-row items-center text-white bg-red-500 rounded-lg">
             <AiOutlinePlus className="mr-2"></AiOutlinePlus>
               Create Event

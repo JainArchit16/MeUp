@@ -1,4 +1,4 @@
-export const filterData = [
+export const Data = [
     {
       id: "1",
       tag: "Buisness",
@@ -36,7 +36,6 @@ export const filterData = [
       time:"Tue,Feb,28",
       price:"$10-50",
       image1:"https://ovatheme.com/meup/wp-content/uploads/2019/09/about_team_2-1-150x150.jpg",
-
 
     },
 

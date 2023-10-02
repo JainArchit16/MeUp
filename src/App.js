@@ -8,8 +8,11 @@ import { Route, Routes } from "react-router-dom";
 import React, { useState } from "react";
 import Howit from "./Components/Howit";
 import Upcoming from "./Components/Upcoming"
+import {Data} from "./data.js";
+import Insert from "./Components/Insert";
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [AddData,setData] =useState(Data);
   return (
     <div >
       <Navbar isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />
@@ -25,9 +28,9 @@ function App() {
           element={<Signup setIsLoggedIn={setIsLoggedIn} />}
         />
 
-          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/Insert" element={<Insert data={AddData} setData={setData}/>} />
       </Routes>
-      <Upcoming></Upcoming>
+      <Upcoming data={AddData}></Upcoming>
       <Howit></Howit>
     </div>
   );

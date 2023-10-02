@@ -31,7 +31,7 @@ const LoginForm = (props) => {
         e.preventDefault();
         setIsLoggedIn(true);
         toast.success("Login Success");
-        navigate("/dashboard");
+        navigate("/");
     }
 
     return (

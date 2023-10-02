@@ -31,8 +31,14 @@ const Insert = (props) => {
     }
 
     return (
-        <form onSubmit={submitHandler} className="flex flex-col w-full gap-y-4 mt-6">
-            <label className="w-full">
+        <div className="justify-center flex">
+
+
+
+       
+        <form onSubmit={submitHandler} className="flex flex-col w-1/3 m-10 mt-10 gap-y-4 justify-center bg-slate-800 rounded-lg p-10">
+        <p className="text-richblack-5 font-bold text-3xl">Add Event</p>
+            <label className="w-full text-richblack-5">
                 <p className="text-[0.875rem] mb-1 leading-[1.375rem]">
                     Title
                     <sup className="text-pink-200">*</sup>
@@ -47,7 +53,7 @@ const Insert = (props) => {
                     className="bg-richblack-800 rounded-[0.75rem] w-full p-[12px] text-richblack-5"
                 />
             </label>
-            <label className="w-full">
+            <label className="w-full text-richblack-5">
                 <p className="text-[0.875rem] mb-1 leading-[1.375rem]">
                     Price
                     <sup className="text-pink-200">*</sup>
@@ -62,7 +68,7 @@ const Insert = (props) => {
                     className="bg-richblack-800 rounded-[0.75rem] w-full p-[12px] text-richblack-5"
                 />
             </label>
-            <label className="w-full">
+            <label className="w-full text-richblack-5">
                 <p className="text-[0.875rem] mb-1 leading-[1.375rem]">
                     Time
                     <sup className="text-pink-200">*</sup>
@@ -77,7 +83,7 @@ const Insert = (props) => {
                     className="bg-richblack-800 rounded-[0.75rem] w-full p-[12px] text-richblack-5"
                 />
             </label>
-            <label className="w-full">
+            <label className="w-full text-richblack-5">
                 <p className="text-[0.875rem] mb-1 leading-[1.375rem]">
                     Tag
                     <sup className="text-pink-200">*</sup>
@@ -94,6 +100,7 @@ const Insert = (props) => {
             </label>
             <button className="bg-yellow-50 py-[8px] px-[12px] rounded-[8px] mt-6 font-medium text-richblack-900">Insert</button>
         </form>
+        </div>
     );
 };
 

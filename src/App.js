@@ -14,8 +14,10 @@ function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [AddData,setData] =useState(Data);
   return (
-    <div >
-    <div className="bg-slate-800">
+    <>
+
+    
+    <div className="bg-slate-800 -z-10">
 
       <Navbar isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />
     </div>
@@ -35,7 +37,7 @@ function App() {
       </Routes>
       <Upcoming data={AddData}></Upcoming>
       <Howit></Howit>
-    </div>
+    </>
   );
 }
 

@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+    overflow-x: hidden;
+}
+/* 
+.bgimage
+{
+   
+    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.353), rgba(0, 0, 0, 0.09));
+    background-image: url("https://ovatheme.com/meup/wp-content/uploads/2019/10/bg_home1.jpg");
+    background-size: cover;
+    background-blend-mode: saturation;
+} */
+
+.module {
+    position: relative;
+    z-index: -50;
+    background-size: cover;
+  }
+  .module::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-image: url("https://ovatheme.com/meup/wp-content/uploads/2019/10/bg_home1.jpg");
+    filter: grayscale(5%);
+    z-index: -50;
+    background-size: cover;
+
+  }
+  .module {
+    background-image:
+      linear-gradient(rgba(0, 0, 0, 0.09), rgba(0, 0, 0, 0.364)),
+      url("https://ovatheme.com/meup/wp-content/uploads/2019/10/bg_home1.jpg");
+    background-size: cover;
+    background-blend-mode: saturation;
+  }
+
+
+  .card-zoom:hover .card-zoom-image {
+    @apply scale-150;
+  }
+  .card-zoom:hover .card-zoom-text {
+    @apply scale-100;
+  }

@@ -46,7 +46,7 @@ const SignupForm = (props) => {
     };
     console.log(accountData);
 
-    navigate("/dashboard");
+    navigate("/");
   }
 
   return (
@@ -112,7 +112,7 @@ const SignupForm = (props) => {
             <input
               type={showCreatePass ? "text" : "password"}
               required
-              placeholder="Enter Password"
+              placeholder="Enter"
               onChange={changeHandler}
               value={formData.password}
               name="password"

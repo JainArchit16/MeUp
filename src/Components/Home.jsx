@@ -13,6 +13,11 @@ const Home = () => {
     const  handleDropdownChange = (event) => {
       setSelectedOption(event.target.value);
   }
+  const [data,setData]=useState("");
+  function handleChange(e)
+  {
+    setData(e.target.value);
+  }
 
   return (
 
@@ -27,9 +32,9 @@ const Home = () => {
         </div>
         <div className='w-[100vw] flex flex-row justify-center mt-6'>
 
-          <form className='flex flex-row flex-wrap justify-center items-center z-10 w-[80%]'>
+          <form className='flex flex-row flex-wrap justify-center items-center w-[80%]'>
           <AiOutlineSearch className='relative left-8 text-2xl text-red-500'></AiOutlineSearch>
-            <input type='text' placeholder={`Enter Name...`} className='w-[20%] h-[50px] pl-10'></input>
+            <input type="text" placeholder={`Enter Name...`} onChange={handleChange} value={data} className='w-[20%] h-[50px] pl-10'></input>
             <GrDocumentText className='relative left-2 text-2xl z-20 text-red-400'></GrDocumentText>
             <select  value={selectedOption} onChange={handleDropdownChange} className='w-[20%] h-[50px] pl-10 -left-6 relative z-10'>
                 <option  value="Education">Education</option>

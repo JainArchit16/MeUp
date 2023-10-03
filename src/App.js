@@ -10,6 +10,9 @@ import Howit from "./Components/Howit";
 import Upcoming from "./Components/Upcoming"
 import {Data} from "./data.js";
 import Insert from "./Components/Insert";
+import Most from "./Components/Most";
+
+
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [AddData,setData] =useState(Data);
@@ -37,6 +40,7 @@ function App() {
       </Routes>
       <Upcoming data={AddData}></Upcoming>
       <Howit></Howit>
+      <Most></Most>
     </>
   );
 }

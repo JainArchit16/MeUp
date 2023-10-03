@@ -37,7 +37,7 @@ const Card = (props) => {
                 
                     <img src={props.dataOne.image} className='w-full -top-10 h-64'></img>
                     <p className='absolute bg-purple-500  rounded-lg text-white p-1 left-6'>{props.dataOne.tag}</p>
-                    <div className='rounded-full w-[40px] h-[40px] bg-white relative p-1 -right-96 -top-14 bottom-[-12px] grid place-items-center'>
+                    <div className='rounded-full w-[40px] h-[40px] bg-white relative p-1 -right-96 -top-10 bottom-[-12px] grid place-items-center'>
                     <button onClick={clickHandler}>
                         {
                             !likedCourses.includes(props.dataOne.id) ? <FcLikePlaceholder fontSize="1.75rem" /> : <FcLike fontSize="1.75rem" />
@@ -51,10 +51,10 @@ const Card = (props) => {
                     <p className='pl-2'>{data.time}</p>
 
                 </div>
-                <div className='flex flex-row justify-around m-4'>
+                <div className='flex flex-row justify-around m-4 mb-10'>
 
-                    <button className='font-bold hover:bg-red-500 hover:text-white inline-block  border-2 transition-all p-1'>Get Ticket</button>
-                        <p className='font-bold text-red-500 text-2xl'>${data.price}</p>
+                    <button className='font-bold hover:bg-red-500 hover:text-white inline-block  border-2 transition-all p-2 -left-12 relative'>Get Ticket</button>
+                        <p className='font-bold text-red-500 text-2xl -right-4 top-1 relative'>${data.price}</p>
                 </div>
 
 

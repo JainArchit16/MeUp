@@ -1,7 +1,7 @@
 import "./App.css";
 import Navbar from "./Components/Navbar";
 import Login from "./Components/Login";
-import Home from "./Components/Home.jsx";
+import Home from "./Components/Home.js";
 import Signup from "./Components/Signup";
 import Dashboard from "./Components/Dashboard";
 import { Route, Routes } from "react-router-dom";
@@ -11,6 +11,8 @@ import Upcoming from "./Components/Upcoming"
 import {Data} from "./data.js";
 import Insert from "./Components/Insert";
 import Most from "./Components/Most";
+import Contact from "./Components/Contact";
+import Subscribe from "./Components/Subscribe";
 
 
 function App() {
@@ -41,6 +43,8 @@ function App() {
       <Upcoming data={AddData}></Upcoming>
       <Howit></Howit>
       <Most></Most>
+      <Subscribe></Subscribe>
+      {/* <Contact></Contact> */}
     </>
   );
 }

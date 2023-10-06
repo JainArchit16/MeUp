@@ -62,3 +62,17 @@ body {
 
   font-family: 'Asap', sans-serif;
 }
+
+/* Add padding to create space between red background and icon */
+.facebook-icon-container {
+  background-color: transparent; /* Set initial background color to transparent */
+  border-radius: 50%; /* To make it a circle */
+  padding: 8px; /* Add padding for space */
+  display: inline-flex; /* Center icon horizontally */
+  align-items: center; /* Center icon vertically */
+  transition: background-color 0.5s ease; /* Add transition for smooth color change */
+}
+
+.facebook-icon-container:hover {
+  background-color: #EF4444; /* Red-500 */
+}

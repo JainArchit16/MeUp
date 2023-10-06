@@ -15,12 +15,25 @@ const Contact = () => {
             Lorem ipsum dolor sit amet, conse ctetuers adipiscing eli sed diam nonum nibhie…
           </p>
           <div className='flex flex-row gap-4 text-white opacity-80 text-xl'>
-            <div className="facebook-icon-container">
+            <div className="facebook-icon-container grid items-center self-center">
               <FaFacebookF className="facebook-icon"></FaFacebookF>
+
             </div>
+
+            <div className="facebook-icon-container grid items-center self-center">
+
             <BiLogoPinterestAlt></BiLogoPinterestAlt>
+            </div>
+
+            <div className="facebook-icon-container grid items-center self-center">
+
             <BsInstagram></BsInstagram>
+            </div>
+
+            <div className="facebook-icon-container grid items-center self-center">
             <AiOutlineTwitter></AiOutlineTwitter>
+
+            </div>
           </div>
         </div>
         <div className='flex flex-col text-white w-[20%] gap-4'>

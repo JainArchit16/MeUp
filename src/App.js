@@ -44,7 +44,7 @@ function App() {
       <Howit></Howit>
       <Most></Most>
       <Subscribe></Subscribe>
-      {/* <Contact></Contact> */}
+      <Contact></Contact>
     </>
   );
 }
